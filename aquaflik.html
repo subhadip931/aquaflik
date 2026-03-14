@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aquaflik - Water Purifier & RO Repair Service, Kolkata</title>
+  <meta name="description" content="Aquaflik — trusted water purifier sales & service in Kolkata. RO repair, installation, AMC, filter replacement & doorstep service. Call 9062484521." />
+  <style>
+    /* ===== Reset & base ===== */
+    :root {
+      --brand: #007bff;
+      --accent: #ffc107;
+      --muted: #6b7280;
+      --bg-light: #f7f9fb;
+      --max-width: 1100px;
+      --radius: 10px;
+    }
+    * { box-sizing: border-box; }
+    html,body { height:100%; margin:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#222; background:#fff; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 1rem; }
+
+    /* ===== Header / Hero ===== */
+    header.site-hero {
+      background: linear-gradient(180deg, rgba(0,123,255,0.92), rgba(0,98,204,0.94));
+      color: #fff;
+      padding: 2.75rem 0 3.5rem;
+      text-align: center;
+    }
+    header .topbar { display:flex; justify-content:space-between; align-items:center; gap:1rem; padding:0.5rem 0; }
+    header .brand { font-weight:700; font-size:1.05rem; letter-spacing:0.2px; }
+    header nav { display:flex; gap:0.75rem; align-items:center; justify-content:center; margin-top:0.5rem; flex-wrap:wrap; }
+    header nav a { color: rgba(255,255,255,0.95); font-weight:600; padding:0.45rem 0.7rem; border-radius:6px; }
+    header nav a:hover { background: rgba(255,255,255,0.06); }
+
+    .hero-content { padding: 1.2rem 0 0; }
+    .hero-content h1 { margin: 0; font-size: clamp(1.6rem, 3.6vw, 2.4rem); line-height:1.05; }
+    .hero-content p.lead { margin:0.7rem auto 1.1rem; max-width:800px; color:rgba(255,255,255,0.95); font-size:1.03rem; }
+    .cta-row { display:flex; gap:0.75rem; justify-content:center; flex-wrap:wrap; margin-top:0.6rem; }
+    .btn { display:inline-flex; align-items:center; gap:0.6rem; border:0; padding:0.7rem 1.05rem; border-radius:8px; font-weight:700; cursor:pointer; }
+    .btn-call { background: var(--accent); color:#222; }
+    .btn-book { background: rgba(255,255,255,0.12); color: #fff; border: 1px solid rgba(255,255,255,0.12); }
+
+    /* ===== Sticky nav on scroll ===== */
+    .sticky-nav { position: sticky; top: 0; z-index: 40; background: #fff; box-shadow: 0 6px 18px rgba(16,24,40,0.06); }
+    .sticky-nav .container { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:0.6rem 0; }
+    .nav-links { display:flex; gap:0.5rem; align-items:center; }
+    .nav-links a { padding:0.45rem 0.6rem; color: #0f172a; font-weight:600; }
+    .nav-links a:hover { color:var(--brand); }
+
+    /* ===== Sections ===== */
+    section { padding: 3rem 0; }
+    h2.section-title { font-size:1.25rem; margin:0 0 1rem 0; color:#0b1220; }
+    .card { background: var(--bg-light); border-radius: var(--radius); padding:1rem; box-shadow: 0 2px 8px rgba(11,20,40,0.04); }
+
+    /* Services grid */
+    .services-grid { display:grid; gap:1rem; grid-template-columns: repeat(1,1fr); }
+    .service { padding:1rem; border-radius:8px; background:#fff; box-shadow:0 1px 6px rgba(11,20,40,0.04); border:1px solid #eef2f7; }
+    .service strong { display:block; margin-bottom:0.35rem; color: #06325a; }
+    .service p { margin:0; color:var(--muted); }
+
+    /* About layout */
+    .about-grid { display:grid; grid-template-columns:1fr; gap:1rem; align-items:center; }
+    .about-grid img { width:100%; border-radius:8px; max-height:320px; object-fit:cover; }
+
+    /* Testimonials */
+    .testimonials { display:grid; gap:1rem; grid-template-columns: 1fr; }
+    .testimonial { padding:1rem; background:#fff; border-radius:8px; box-shadow:0 1px 6px rgba(11,20,40,0.04); border:1px solid #eef2f7; font-style:italic; }
+
+    /* Contact */
+    .contact-grid { display:grid; gap:1rem; grid-template-columns: 1fr; text-align:left; }
+    .contact-item { display:flex; gap:0.75rem; align-items:flex-start; }
+    .contact-item .ci-label { font-weight:700; color:#06325a; min-width:110px; }
+    .address { color:var(--muted); }
+
+    footer { text-align:center; padding:1.2rem 0; color:var(--muted); font-size:0.95rem; border-top:1px solid #f1f5f9; }
+
+    /* ===== Responsive layout ===== */
+    @media (min-width:700px) {
+      .services-grid { grid-template-columns: repeat(2,1fr); }
+      .about-grid { grid-template-columns: 1fr 1fr; }
+      .testimonials { grid-template-columns: repeat(3, 1fr); }
+      .contact-grid { grid-template-columns: 1fr 320px; align-items:center; }
+      header .topbar { padding:0 0.5rem; }
+      header nav { margin-top:0.75rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky top navigation -->
+  <div class="sticky-nav" aria-hidden="false">
+    <div class="container" role="navigation" aria-label="Main navigation">
+      <div style="display:flex;align-items:center;gap:1rem;">
+        <div class="brand" aria-hidden="true">Aquaflik</div>
+        <div style="color:var(--muted);font-size:0.92rem;">Water Purifier & RO Repair — Kolkata</div>
+      </div>
+
+      <div class="nav-links" aria-hidden="false">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header class="site-hero" id="home" role="banner">
+    <div class="container">
+      <div class="topbar" aria-hidden="true">
+        <div style="display:flex;flex-direction:column;align-items:flex-start;">
+          <div style="font-weight:800;font-size:1.02rem">Aquaflik</div>
+          <div style="font-size:0.88rem;color:rgba(255,255,255,0.9)">234/A, Jodhpur Park, Kolkata, West Bengal 700045</div>
+        </div>
+
+        <div style="display:flex;gap:0.6rem;align-items:center;">
+          <a class="btn btn-call" href="tel:9062484521" aria-label="Call Aquaflik">📞 9062484521</a>
+          <a class="btn btn-book" href="#contact" aria-label="Book a service">Book Service</a>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <h1>Aquaflik — Clean water. Fast service.</h1>
+        <p class="lead">Aquaflik is a trusted water purifier sales and service provider in Kolkata offering professional RO repair, installation, AMC maintenance, filter replacement, and doorstep service for all brands. Fast response, genuine spare parts, and affordable pricing for homes and businesses.</p>
+
+        <div class="cta-row">
+          <a class="btn btn-call" href="tel:9062484521" aria-label="Call now">Call Now — 9062484521</a>
+          <a class="btn btn-book" href="#services" aria-label="See services">Our Services</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section id="services" class="container" aria-labelledby="services-title">
+    <h2 id="services-title" class="section-title">Our Services</h2>
+    <div class="services-grid">
+      <div class="service">
+        <strong>RO / UV / UF Repair & Maintenance</strong>
+        <p>Rapid diagnosis and repair for all purifier types. Trained technicians and genuine spare parts to restore water quality quickly.</p>
+      </div>
+
+      <div class="service">
+        <strong>New Unit Installation</strong>
+        <p>Professional installation of new RO/UV/UF systems for homes and offices with neat plumbing and testing on-site.</p>
+      </div>
+
+      <div class="service">
+        <strong>AMC — Annual Maintenance Contracts</strong>
+        <p>Flexible and affordable AMC plans for regular check-ups, preventive maintenance, and priority service calls.</p>
+      </div>
+
+      <div class="service">
+        <strong>Filter Replacement</strong>
+        <p>Genuine filters and cartridges replaced on schedule — extend purifier life and keep water safe and tasty.</p>
+      </div>
+
+      <div class="service">
+        <strong>Doorstep Service</strong>
+        <p>Convenient at-home visits, clear pricing, and service receipts. Same-day or next-day visits when possible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container" aria-labelledby="about-title">
+    <h2 id="about-title" class="section-title">About Aquaflik</h2>
+    <div class="about-grid">
+      <div>
+        <div class="card">
+          <p><strong>A local Kolkata specialist.</strong> We’re based in Jodhpur Park and serve households and businesses across Kolkata. Our technicians are trained to service all major brands and models. We use only genuine parts and stand behind our work — your satisfaction is our guarantee.</p>
+          <p style="margin-top:0.8rem;color:var(--muted)"><strong>Quick response • Genuine parts • Transparent pricing</strong></p>
+        </div>
+      </div>
+
+      <div>
+        <img src="https://images.unsplash.com/photo-1566843973734-80c6c6da1ec7?auto=format&fit=crop&w=1200&q=80" alt="Technician servicing a water purifier" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="container" aria-labelledby="testimonials-title">
+    <h2 id="testimonials-title" class="section-title">What our customers say</h2>
+    <div class="testimonials">
+      <div class="testimonial">"Aquaflik fixed my RO in no time. Friendly technician and clear pricing — highly recommended." <div style="margin-top:0.6rem;font-weight:700;text-align:right;">— R. Sen, Kolkata</div></div>
+
+      <div class="testimonial">"Installed a new purifier and signed up for AMC. Professional, punctual, and affordable." <div style="margin-top:0.6rem;font-weight:700;text-align:right;">— S. Das, Kolkata</div></div>
+
+      <div class="testimonial">"Filter replacement done quickly. Water tastes much better now." <div style="margin-top:0.6rem;font-weight:700;text-align:right;">— P. Gupta, South City</div></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container" aria-labelledby="contact-title">
+    <h2 id="contact-title" class="section-title">Contact Aquaflik</h2>
+    <div class="contact-grid">
+      <div class="card">
+        <p style="margin:0 0 0.6rem 0;"><strong>Call or WhatsApp:</strong> <a href="tel:9062484521">9062484521</a></p>
+        <div class="contact-item"><div class="ci-label">Address</div><div class="address">234/A, Jodhpur Park, Kolkata, West Bengal 700045</div></div>
+        <div class="contact-item" style="margin-top:0.45rem;"><div class="ci-label">Email</div><div class="address"><a href="mailto:contact@aquaflik.com">contact@aquaflik.com</a></div></div>
+
+        <p style="margin-top:1rem;color:var(--muted)">We provide doorstep repairs, installations, AMC maintenance and filter replacements for residential and commercial customers. Call for same-day service where available.</p>
+      </div>
+
+      <div class="card">
+        <h3 style="margin:0 0 0.6rem 0;">Request a callback</h3>
+        <form id="callbackForm" onsubmit="return submitCallback(event)" aria-label="Request a callback form">
+          <div style="display:flex;flex-direction:column;gap:0.6rem;">
+            <input name="name" type="text" placeholder="Your name" required style="padding:0.6rem;border-radius:8px;border:1px solid #e6eef6;" />
+            <input name="phone" type="tel" placeholder="Phone e.g. 9062484521" required style="padding:0.6rem;border-radius:8px;border:1px solid #e6eef6;" />
+            <textarea name="message" placeholder="Tell us briefly (optional)" rows="3" style="padding:0.6rem;border-radius:8px;border:1px solid #e6eef6;"></textarea>
+            <div style="display:flex;gap:0.6rem;">
+              <button type="submit" class="btn btn-call" style="flex:1;">Request callback</button>
+              <a href="tel:9062484521" class="btn btn-book" style="align-self:center;">Or call now</a>
+            </div>
+            <div id="formMsg" style="font-size:0.95rem;color:var(--muted);"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      © <strong>Aquaflik</strong> — Water Purifier Sales & Service • 234/A, Jodhpur Park, Kolkata • <a href="tel:9062484521">9062484521</a>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth-scrolling for anchor links
+    (function(){
+      const links = document.querySelectorAll('a[href^="#"]');
+      for (const a of links) {
+        a.addEventListener('click', function(e){
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            history.replaceState(null, '', this.getAttribute('href'));
+          }
+        });
+      }
+    })();
+
+    // Simple client-side "form" behavior (no backend). Replace with your endpoint if you have one.
+    function submitCallback(e){
+      e.preventDefault();
+      const f = e.target;
+      const name = f.name.value.trim();
+      const phone = f.phone.value.trim();
+      const msgEl = document.getElementById('formMsg');
+
+      if(!name || !phone){
+        msgEl.textContent = 'Please enter your name and phone number.';
+        return false;
+      }
+      // Simulate submit (no backend). If you have a server, replace this with fetch() to your API.
+      msgEl.textContent = 'Thanks! We received your request. Aquaflik will call you back soon at ' + phone + '.';
+      f.reset();
+      return false;
+    }
+  </script>
+</body>
+</html>
